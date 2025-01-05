@@ -1,0 +1,17 @@
+The following CSS code snippet demonstrates an uncommon error related to specificity and inheritance:
+
+```css
+.container {
+  color: blue;
+}
+
+.container p {
+  color: red !important;
+}
+
+p {
+  color: green;
+}
+```
+
+The unexpected behavior here arises from the interplay of specificity and the `!important` flag.  While the `p` element within the `.container` class is given a high specificity rule setting its color to red and overriding the `!important` flag will set the color to red. 
